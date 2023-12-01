@@ -44,11 +44,14 @@ Kaggle competition
    pandas = "^1.0"
    numpy = "^1.2"
    scikit-learn = "^1.3"
+
+   [tool.poetry.dev-dependencies]
+   jupyter = "^1.0.0"
    
    
    [build-system]
    requires = ["poetry-core"]
-   build-backend = "poetry.core.masonry.api"
+   build-backend = "poetry.core.masonry.API"
 
 
    # update dependencies every time you change pyproject.toml:
