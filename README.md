@@ -9,7 +9,7 @@ Kaggle competition
    git clone git@github.com:NxNiki/Kaggle.git
    ```
    
-2. set up conda environment (this is essential for code reproducibility):
+2. set up conda environment (Conda is designed for managing system-level dependencies):
    it's recommended to use the project name as your environment name.
    
    ```
@@ -18,7 +18,7 @@ Kaggle competition
    ```
 
 3. go to the folder and create your folder for a specific project:
-   use poetry to manage Python libraries (this makes it easy for others to keep a track of the Python libraries used in your project):
+   use poetry to manage Python libraries ( Poetry is designed for managing Python-level dependencies.):
    
    ```
    # install poetry if you don't have it (will take a few minutes...):
@@ -46,7 +46,11 @@ Kaggle competition
    scikit-learn = "^1.3"
 
    [tool.poetry.dev-dependencies]
-   jupyter = "^1.0.0"
+   matplotlib = "*"
+   seaborn = "*"
+   jupyter = "*"
+   ipykernel = "*"
+   
    
    
    [build-system]
