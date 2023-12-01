@@ -18,7 +18,7 @@ Kaggle competition
    ```
 
 3. go to the folder and create your folder for a specific project:
-   use poetry to manage Python libraries (this makes it easy for others to install the Python library:
+   use poetry to manage Python libraries (this makes it easy for others to keep a track of the Python libraries used in your project):
    
    ```
    # install poetry if you don't have it (will take a few minutes...):
@@ -27,6 +27,32 @@ Kaggle competition
    # create project: it's recommended to use the project name as your environment name.
    poetry new SpaceshipTitanic
    cd SpaceshipTitanic
+   ```
+   
+4. Open the file named pyproject.toml and add your libraries:
+
+   ```
+   [tool.poetry]
+   name = "spaceshiptitanic"
+   version = "0.1.0"
+   description = ""
+   authors = ["NxNiki <michaelniki1988@gmail.com>"]
+   readme = "README.md"
+   
+   [tool.poetry.dependencies]
+   python = "^3.9"
+   pandas = "^1.0"
+   numpy = "^1.2"
+   scikit-learn = "^1.3"
+   
+   
+   [build-system]
+   requires = ["poetry-core"]
+   build-backend = "poetry.core.masonry.api"
+
+
+   # update dependencies every time you change pyproject.toml:
+   poetry update
    ```
 
 
